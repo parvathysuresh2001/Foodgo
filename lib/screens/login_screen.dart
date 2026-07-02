@@ -66,7 +66,6 @@ class _LoginScreenState extends State<LoginScreen> {
       final data = jsonDecode(response.body) as Map<String, dynamic>;
 
       if (response.statusCode == 200) {
-        // Success — store tokens for later authenticated requests.
         final accessToken = data['access'] as String?;
         final refreshToken = data['refresh'] as String?;
         final userEmail = data['email'] as String?;
