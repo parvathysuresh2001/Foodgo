@@ -138,8 +138,9 @@ flutter build windows --release
 The login screen calls the following endpoint:
 
 ```
-POST https://api.gulika.app/api/login/
+POST https://your-endpoint
 ```
+replace your endpoint with actual end point URL
 
 This is configured in `lib/login_screen.dart` via the `_loginUrl` constant. Update this value if pointing to a different environment (staging, local, etc.).
 
